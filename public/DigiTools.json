@@ -1,0 +1,130 @@
+[
+  {
+    "id": "prod_01",
+    "name": "Starter Plan",
+    "description": "Essential tools for individuals and freelancers looking to build their digital presence.",
+    "price": 0.0,
+    "period": "monthly",
+    "tag": "Free Forever",
+    "tagType": "new",
+    "features": [
+      "5 core templates",
+      "Standard PDF export",
+      "Basic analytics",
+      "Community support"
+    ],
+    "icon": "LayersIcon"
+  },
+  {
+    "id": "prod_02",
+    "name": "Pro Resume Builder",
+    "description": "Supercharge your job hunt with advanced optimization tools and premium layouts.",
+    "price": 12.0,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "ATS optimization engine",
+      "Unlimited PDF & Word exports",
+      "AI cover letter writer"
+    ],
+    "icon": "BriefcaseIcon"
+  },
+  {
+    "id": "prod_03",
+    "name": "Growth Marketer Suite",
+    "description": "Full access to advanced marketing automation, tracking, and campaign management.",
+    "price": 49.0,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited landing pages",
+      "Advanced A/B testing",
+      "CRM integration",
+      "Priority 24/7 chat support"
+    ],
+    "icon": "TrendingUpIcon"
+  },
+  {
+    "id": "prod_04",
+    "name": "Annual Pro Pass",
+    "description": "Get all the power of our Pro Plan for a full year at a heavily discounted rate.",
+    "price": 96.0,
+    "period": "yearly",
+    "tag": "Save 33%",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "ATS optimization engine",
+      "Unlimited PDF & Word exports",
+      "2 months free equivalent"
+    ],
+    "icon": "CalendarIcon"
+  },
+  {
+    "id": "prod_05",
+    "name": "Custom Portfolio Setup",
+    "description": "A one-on-one session with a design expert to build and launch your custom domain portfolio.",
+    "price": 149.0,
+    "period": "one-time",
+    "tag": "Expert Service",
+    "tagType": "new",
+    "features": [
+      "60-minute live consultation",
+      "Custom domain mapping",
+      "Bespoke CSS styling",
+      "SEO optimization audit"
+    ],
+    "icon": "PaintbrushIcon"
+  },
+  {
+    "id": "prod_06",
+    "name": "Enterprise Shield",
+    "description": "Top-tier security, dedicated infrastructure, and compliance tools for large organizations.",
+    "price": 299.0,
+    "period": "monthly",
+    "tag": "Enterprise",
+    "tagType": "best seller",
+    "features": [
+      "SSO/SAML authentication",
+      "Dedicated account manager",
+      "99.9% SLA uptime guarantee",
+      "Custom contract & invoicing"
+    ],
+    "icon": "ShieldCheckIcon"
+  },
+  {
+    "id": "prod_07",
+    "name": "AI Content Add-On",
+    "description": "Unlock unlimited AI-generated copy, descriptions, and brainstorms across the platform.",
+    "price": 19.0,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "new",
+    "features": [
+      "Unlimited AI credits",
+      "Tone of voice customization",
+      "Plagiarism checker",
+      "Multi-language support (30+)"
+    ],
+    "icon": "SparklesIcon"
+  },
+  {
+    "id": "prod_08",
+    "name": "Lifetime Foundation Membership",
+    "description": "Pay once and secure full platform access to all current and future core features forever.",
+    "price": 499.0,
+    "period": "one-time",
+    "tag": "Limited Time",
+    "tagType": "popular",
+    "features": [
+      "Lifetime platform access",
+      "All future Pro updates included",
+      "Founding member profile badge",
+      "Exclusive Beta feature access"
+    ],
+    "icon": "AwardIcon"
+  }
+]

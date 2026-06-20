@@ -7,12 +7,12 @@ const Hero = () => {
     <div className="font-display max-w-7xl flex items-center mx-50 my-15 gap-15">
       <div className="space-y-8">
         <div className="space-y-4">
-          <div class="inline-flex items-center gap-2 rounded-full bg-[#E8EBFF] px-4 py-2 font-sans font-medium text-[#7C3AED]">
-            <div class="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#C4B5FD]">
-              <div class="h-2.5 w-2.5 rounded-full bg-[#7C3AED]"></div>
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#E8EBFF] px-4 py-2 font-sans font-medium text-[#7C3AED]">
+            <div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-[#C4B5FD]">
+              <div className="h-2.5 w-2.5 rounded-full bg-[#7C3AED]"></div>
             </div>
 
-            <span class="text-sm tracking-wide">
+            <span className="text-sm tracking-wide">
               New: AI-Powered Tools Available
             </span>
           </div>
