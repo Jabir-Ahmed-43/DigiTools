@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import CartPage from "./components/Cart/CartPage.jsx";
+import GetStarted from "./components/Get Started/GetStarted.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Description from "./components/Product Grid/Description.jsx";
@@ -37,6 +38,7 @@ function App() {
       )}
 
       {!productsBtn && <CartPage addedCart={addedCart} totalPrice={totalPrice}></CartPage>}
+      <GetStarted></GetStarted>
     </>
   );
 }
