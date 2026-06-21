@@ -2,7 +2,7 @@
   {
     "id": "prod_01",
     "name": "Starter Plan",
-    "description": "Essential tools for individuals and freelancers looking to build their digital presence.",
+    "description": "Essential tools for individuals and freelancers looking to  their presence.",
     "price": 0.0,
     "period": "monthly",
     "tag": "Free Forever",
@@ -13,7 +13,7 @@
       "Basic analytics",
       "Community support"
     ],
-    "icon": "LayersIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/layers.svg"
   },
   {
     "id": "prod_02",
@@ -29,7 +29,24 @@
       "Unlimited PDF & Word exports",
       "AI cover letter writer"
     ],
-    "icon": "BriefcaseIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/briefcase.svg"
+  },
+
+  {
+    "id": "prod_04",
+    "name": "Annual Pro Pass",
+    "description": "Get all the power of our Pro Plan for a full year at a heavily discounted rate.",
+    "price": 96.0,
+    "period": "yearly",
+    "tag": "Save 33%",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "ATS optimization engine",
+      "Unlimited PDF & Word exports",
+      "2 months free equivalent"
+    ],
+    "icon": "https://unpkg.com/lucide-static@latest/icons/calendar.svg"
   },
   {
     "id": "prod_03",
@@ -45,23 +62,7 @@
       "CRM integration",
       "Priority 24/7 chat support"
     ],
-    "icon": "TrendingUpIcon"
-  },
-  {
-    "id": "prod_04",
-    "name": "Annual Pro Pass",
-    "description": "Get all the power of our Pro Plan for a full year at a heavily discounted rate.",
-    "price": 96.0,
-    "period": "yearly",
-    "tag": "Save 33%",
-    "tagType": "popular",
-    "features": [
-      "100+ premium templates",
-      "ATS optimization engine",
-      "Unlimited PDF & Word exports",
-      "2 months free equivalent"
-    ],
-    "icon": "CalendarIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/trending-up.svg"
   },
   {
     "id": "prod_05",
@@ -77,7 +78,7 @@
       "Bespoke CSS styling",
       "SEO optimization audit"
     ],
-    "icon": "PaintbrushIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/paintbrush.svg"
   },
   {
     "id": "prod_06",
@@ -93,7 +94,7 @@
       "99.9% SLA uptime guarantee",
       "Custom contract & invoicing"
     ],
-    "icon": "ShieldCheckIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/shield-check.svg"
   },
   {
     "id": "prod_07",
@@ -109,11 +110,11 @@
       "Plagiarism checker",
       "Multi-language support (30+)"
     ],
-    "icon": "SparklesIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/sparkles.svg"
   },
   {
     "id": "prod_08",
-    "name": "Lifetime Foundation Membership",
+    "name": "Lifetime Membership",
     "description": "Pay once and secure full platform access to all current and future core features forever.",
     "price": 499.0,
     "period": "one-time",
@@ -125,6 +126,6 @@
       "Founding member profile badge",
       "Exclusive Beta feature access"
     ],
-    "icon": "AwardIcon"
+    "icon": "https://unpkg.com/lucide-static@latest/icons/award.svg"
   }
 ]
