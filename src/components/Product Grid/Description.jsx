@@ -1,14 +1,6 @@
-import { useState } from "react";
 import { myBtnStyle } from "../Gradient-color/Gradient";
 
-const Description = () => {
-  const [productsBtn, setProductBtn] = useState(true);
-
-  function handleBtn(value) {
-    // console.log(value);
-    
-    setProductBtn(value);
-  }
+const Description = ({handleBtn, productsBtn, addedCart}) => {
 
   return (
     <div className="text-center font-display">
@@ -29,7 +21,7 @@ const Description = () => {
           className={`p-4 ${!productsBtn && myBtnStyle + 'rounded-3xl text-white'}`}
           onClick={() => handleBtn(false)}
         >
-          Cart
+          Cart ({addedCart.length})
         </button>
       </div>
     </div>

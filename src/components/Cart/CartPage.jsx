@@ -1,7 +1,7 @@
 import { myBtnStyle } from "../Gradient-color/Gradient";
 import CartItems from "./CartItems";
 
-const CartPage = ({ addedCart }) => {
+const CartPage = ({ addedCart, totalPrice }) => {
   console.log(addedCart);
 
   return (
@@ -12,9 +12,16 @@ const CartPage = ({ addedCart }) => {
           <CartItems key={idx} item={item}></CartItems>
         ))}
       </div>
-      <p className="my-4">Total: </p>
+      <div className="flex items-center justify-between">
+        <p className="my-4">Total: </p>
+        <h2 className="font-bold text-2xl">${totalPrice}</h2>
+      </div>
 
-      <button className={myBtnStyle + "w-full rounded-4xl p-2 text-white text-sm font-bold"}>
+      <button
+        className={
+          myBtnStyle + "w-full rounded-4xl p-2 text-white text-sm font-bold"
+        }
+      >
         Proceed To Checkout
       </button>
     </div>

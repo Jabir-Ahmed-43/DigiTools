@@ -8,15 +8,16 @@ const GridSingle = ({ product,handleAddedCart }) => {
       <img className="border p-2 rounded-full text-gray-300" src={icon} alt={name} />
       <h1 className="text-[24px] font-bold">{name}</h1>
       <p className="text-[16px] text-[#627382]">{description}</p>
-      <p className="text[#627382]">
-        <strong className="text-2xl">${price}</strong><span>/{period}</span>
+      <p >
+        <strong className="text-2xl">${price}</strong><span className="text-[#627382]
+        ">/{period}</span>
       </p>
       <ul>
         {features.map((feature, i) => (
           <li key={i} className="text-[#627382] flex items-center" ><IoCheckmarkSharp /> {feature}</li>
         ))}
       </ul>
-      <button className={myBtnStyle + "w-full rounded-4xl p-3 text-white font-bold"} onClick={()=> handleAddedCart(product)}>Buy Now</button>
+      <button className={myBtnStyle + "w-full rounded-4xl p-3 text-white font-bold"} onClick={()=> handleAddedCart(product, price)}>Buy Now</button>
     </div>
   );
 };

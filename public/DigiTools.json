@@ -3,7 +3,7 @@
     "id": "prod_01",
     "name": "Starter Plan",
     "description": "Essential tools for individuals and freelancers looking to  their presence.",
-    "price": 0.0,
+    "price": 7.0,
     "period": "monthly",
     "tag": "Free Forever",
     "tagType": "new",

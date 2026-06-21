@@ -9,19 +9,34 @@ import TrustBar from "./components/Trustbar/TrustBar.jsx";
 
 function App() {
   const [addedCart, setAddedCart] = useState([]);
+  const [productsBtn, setProductBtn] = useState(true);
+  const [totalPrice, setTotalPrice] = useState(0);
 
-  function handleAddedCart(item) {
+  function handleBtn(value) {
+    // console.log(value);
+
+    setProductBtn(value);
+  }
+
+  function handleAddedCart(item, price) {
     setAddedCart((prevItems) => [...prevItems, item]);
+    setTotalPrice(totalPrice + +price);
   }
   return (
     <>
       <Navbar></Navbar>
       <Hero></Hero>
       <TrustBar></TrustBar>
-      <Description></Description>
-      <ProductGrid handleAddedCart={handleAddedCart}></ProductGrid>
+      <Description
+        handleBtn={handleBtn}
+        productsBtn={productsBtn}
+        addedCart={addedCart}
+      ></Description>
+      {productsBtn && (
+        <ProductGrid handleAddedCart={handleAddedCart}></ProductGrid>
+      )}
 
-      <CartPage addedCart={addedCart}></CartPage>
+      {!productsBtn && <CartPage addedCart={addedCart} totalPrice={totalPrice}></CartPage>}
     </>
   );
 }
