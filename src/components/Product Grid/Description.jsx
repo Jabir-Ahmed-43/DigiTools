@@ -3,7 +3,7 @@ import { myBtnStyle } from "../Gradient-color/Gradient";
 const Description = ({handleBtn, productsBtn, addedCart}) => {
 
   return (
-    <div className="text-center font-display">
+    <div className="text-center font-display pt-30 pb-10">
       <h1 className="text-[48px] font-bold p-4">Premium Digital Tools</h1>
       <p className="pb-4">
         Choose from our curated collection of premium digital products designed

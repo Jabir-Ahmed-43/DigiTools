@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import CTASection from "./components/Call to Action/CTASection.jsx";
 import CartPage from "./components/Cart/CartPage.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import GetStarted from "./components/Get Started/GetStarted.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
@@ -25,6 +26,12 @@ function App() {
     setAddedCart((prevItems) => [...prevItems, item]);
     setTotalPrice(totalPrice + +price);
   }
+
+  function handleRemoveFromCart(item, price){
+    setAddedCart(addedCart.filter(curr => curr.id !== item.id));
+    setTotalPrice(totalPrice - +price);
+  }
+
   return (
     <>
       <Navbar></Navbar>
@@ -38,11 +45,20 @@ function App() {
       {productsBtn && (
         <ProductGrid handleAddedCart={handleAddedCart}></ProductGrid>
       )}
+      {productsBtn && (
+        <GetStarted handleAddedCart={handleAddedCart}></GetStarted>
+      )}
+      {productsBtn && (
+        <PurchaseContent handleAddedCart={handleAddedCart}></PurchaseContent>
+      )}
+      {productsBtn && (
+        <CTASection handleAddedCart={handleAddedCart}></CTASection>
+      )}
 
-      {!productsBtn && <CartPage addedCart={addedCart} totalPrice={totalPrice}></CartPage>}
-      <GetStarted></GetStarted>
-      <PurchaseContent></PurchaseContent>
-      <CTASection></CTASection>
+      {!productsBtn && (
+        <CartPage addedCart={addedCart} handleRemoveFromCart={handleRemoveFromCart} totalPrice={totalPrice}></CartPage>
+      )}
+      <Footer></Footer>
     </>
   );
 }

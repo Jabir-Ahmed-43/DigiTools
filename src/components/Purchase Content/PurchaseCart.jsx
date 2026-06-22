@@ -37,6 +37,7 @@ const PurchaseCart = ({ item }) => {
     group-hover:bg-none
     group-hover:bg-white
     group-hover:text-[#4F39F6]
+    hover:scale-105
     transition-all duration-200
   "
 >

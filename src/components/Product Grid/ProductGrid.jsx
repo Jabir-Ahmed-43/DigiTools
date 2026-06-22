@@ -11,7 +11,7 @@ const ProductGrid = ({handleAddedCart}) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-50 my-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-50 py-30">
       {productGrid.map((product) => (
         <GridSingle key={product.id} product={product} handleAddedCart={handleAddedCart}></GridSingle>
       ))}

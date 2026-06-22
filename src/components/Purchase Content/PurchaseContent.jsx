@@ -9,14 +9,14 @@ const PurchaseContent = () => {
       .then((data) => setPurchases(data));
   });
   return (
-    <div className="font-display">
+    <div className="font-display py-30 px-50">
       <div className="text-center space-y-4">
         <h1 className="text-5xl font-bold">Simple, Transparent Pricing</h1>
         <p className="text-[#627382] text-[16px]">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-3 mx-50 gap-6 my-10">
+      <div className=" grid grid-cols-1 md:grid-cols-3  gap-6 py-10">
         {purchases.map((item, i) => (
           <PurchaseCart key={i} item={item}></PurchaseCart>
         ))}

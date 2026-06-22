@@ -26,9 +26,9 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <button className={myBtnStyle + ' text-md p-2 rounded-4xl font-bold border text-white'
+          <button className={myBtnStyle + ' text-md p-3 rounded-4xl font-bold border text-white hover:scale-105 transition-all duration-200'
           }>Explore Products</button>
-          <button className="flex items-center border rounded-4xl p-2 font-bold"><FaPlay />  Watch Demo</button>
+          <button className="flex items-center border rounded-4xl p-3 font-bold hover:scale-105 transition-all duration-200"><FaPlay />  Watch Demo</button>
         </div>
       </div>
       <div>

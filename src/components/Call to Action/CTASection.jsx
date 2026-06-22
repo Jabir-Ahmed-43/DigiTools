@@ -12,8 +12,8 @@ const CTASection = () => {
         </p>
       </div>
       <div className="flex items-center gap-4 text-[16px] font-semibold">
-        <button className=" p-4 rounded-4xl bg-white"> <p className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Explore Products</p></button>
-        <button className=" p-4 border text-white rounded-4xl">View Pricing</button>
+        <button className=" p-4 rounded-4xl bg-white hover:scale-105 transition-all duration-200"> <p className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent hover:scale-105 transition-all duration-200">Explore Products</p></button>
+        <button className=" p-4 border text-white rounded-4xl hover:scale-105 transition-all duration-200">View Pricing</button>
       </div>
       <p className="text-white text-[16px]">14-day free trial • No credit card required • Cancel anytime</p>
     </div>
