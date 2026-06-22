@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Description from "./components/Product Grid/Description.jsx";
 import ProductGrid from "./components/Product Grid/ProductGrid.jsx";
+import PurchaseContent from "./components/Purchase Content/PurchaseContent.jsx";
 import TrustBar from "./components/Trustbar/TrustBar.jsx";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 
       {!productsBtn && <CartPage addedCart={addedCart} totalPrice={totalPrice}></CartPage>}
       <GetStarted></GetStarted>
+      <PurchaseContent></PurchaseContent>
     </>
   );
 }

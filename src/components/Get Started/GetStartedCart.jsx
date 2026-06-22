@@ -1,8 +1,10 @@
+import { myBtnStyle } from "../Gradient-color/Gradient";
+
 const GetStartedCart = ({ item }) => {
   const { stepNumber, title, description, icon } = item;
   return (
-    <div className="relative text-center border border-gray-100 p-8 rounded-2xl flex flex-col items-center shadow-sm bg-white min-h-[320px] justify-center">
-      <p className="absolute top-4 right-4 bg-[#7C3AED] text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
+    <div className="relative text-center border border-gray-100 p-8 rounded-2xl flex flex-col items-center shadow-sm bg-white min-h-[320px] justify-center h-[380px] w-[380px] ">
+      <p className={myBtnStyle + "absolute top-4 right-4 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center"}>
         {stepNumber}
       </p>
       <div className="space-y-4 flex flex-col justify-center items-center">
