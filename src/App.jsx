@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import CTASection from "./components/Call to Action/CTASection.jsx";
 import CartPage from "./components/Cart/CartPage.jsx";
 import GetStarted from "./components/Get Started/GetStarted.jsx";
 import Hero from "./components/Hero/Hero.jsx";
@@ -41,6 +42,7 @@ function App() {
       {!productsBtn && <CartPage addedCart={addedCart} totalPrice={totalPrice}></CartPage>}
       <GetStarted></GetStarted>
       <PurchaseContent></PurchaseContent>
+      <CTASection></CTASection>
     </>
   );
 }
